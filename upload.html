@@ -210,3 +210,74 @@
     <div class="container nav-wrapper">
         <a href="https://leajacques99-rgb.github.io/nova-digital-solutions/" class="logo">
             <i class="fa-solid fa-layer-group"></i>
+            Nova<span>Digital</span>Solution
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="./form.html">Home</a></li>
+            <li><a href="./form.html">Form</a></li>
+            <li><a href="./upload.html">Uploads</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./team.html">Our Team</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-cta">Get a Quote</a>
+    </div>
+</header>
+
+<div class="main-content">
+    <div class="upload-card">
+        <h2 class="section-title">Secure Asset Upload</h2>
+        <p class="subtitle">
+            After completing the test, please upload your files here. Our team will review them within 1–2 business days.
+        </p>
+
+        <input type="file" id="fileInput" multiple hidden>
+
+        <div class="drop-zone" id="dropZone">
+            <i class="fa-solid fa-cloud-arrow-up icon-cloud"></i>
+            <h3>Drag & Drop files here</h3>
+            <p style="color:#94A3B8;margin-top:5px;">
+                or <span style="text-decoration:underline;color:var(--primary);">browse your computer</span>
+            </p>
+        </div>
+
+        <ul class="file-list" id="fileList"></ul>
+
+        <button id="uploadBtn" class="btn-main">Start Upload</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Nova Digital Solution. All rights reserved.</p>
+</footer>
+
+<script>
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const uploadBtn = document.getElementById('uploadBtn');
+    const fileList = document.getElementById('fileList');
+
+    let filesQueue = [];
+
+    dropZone.onclick = () => fileInput.click();
+    fileInput.onchange = e => handleFiles(e.target.files);
+
+    function handleFiles(files) {
+        Array.from(files).forEach(file => {
+            filesQueue.push(file);
+            const li = document.createElement('li');
+            li.className = 'file-item';
+            li.textContent = file.name;
+            fileList.appendChild(li);
+        });
+        if (filesQueue.length > 0) {
+            uploadBtn.classList.add('active');
+            uploadBtn.textContent = `Upload ${filesQueue.length} File(s)`;
+        }
+    }
+</script>
+
+</body>
+</html>
