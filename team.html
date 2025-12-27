@@ -22,4 +22,333 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Nova D
+    <title>Our Team - Nova Digital Solution</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #2563EB;
+            --secondary: #0F172A;
+            --light-bg: #F8FAFC;
+            --white: #FFFFFF;
+            --text-body: #475569;
+            --border-color: #E2E8F0;
+            --radius-lg: 16px;
+            --container-width: 1200px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-body);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: var(--secondary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: var(--container-width); margin: auto; padding: 0 20px; }
+        .section-padding { padding: 80px 0; }
+
+        /* HEADER */
+        header {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-wrapper {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span { color: var(--secondary); }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-cta {
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; }
+
+        /* HERO */
+        .page-hero {
+            background: linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        /* TEAM */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .team-img-wrapper {
+            height: 350px;
+            overflow: hidden;
+            background: #E2E8F0;
+        }
+
+        .team-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .team-card:hover img { transform: scale(1.05); }
+
+        .team-info { padding: 24px; }
+
+        .team-info h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .team-role {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 35px;
+            height: 35px;
+            background: #F1F5F9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            color: #CBD5E1;
+            padding: 80px 0 30px;
+        }
+
+        .copyright {
+            border-top: 1px solid #1E293B;
+            padding-top: 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .btn-cta-nav { display: none; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="https://leajacques99-rgb.github.io/nova-digital-solutions/" class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            Nova<span>Digital</span>Solution
+        </a>
+
+        <nav>
+            <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./form.html">Form</a></li>
+                <li><a href="./upload.html">Uploads</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./team.html" class="active">Our Team</a></li>
+            </ul>
+        </nav>
+
+        <a href="#contact" class="btn-cta btn-cta-nav">Get a Quote</a>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Meet the Experts</h1>
+        <p>The people driving growth, strategy, and innovation at Nova Digital Solution.</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="team-grid">
+
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" alt="CEO">
+                </div>
+                <div class="team-info">
+                    <h3>James Anderson</h3>
+                    <span class="team-role">CEO & Founder</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Strategy Lead">
+                </div>
+                <div class="team-info">
+                    <h3>Sarah Mitchell</h3>
+                    <span class="team-role">Head of Strategy</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80" alt="Creative Director">
+                </div>
+                <div class="team-info">
+                    <h3>David Chen</h3>
+                    <span class="team-role">Creative Director</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Lead Developer">
+                </div>
+                <div class="team-info">
+                    <h3>Emily Roberts</h3>
+                    <span class="team-role">Lead Developer</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container" style="text-align:center;">
+        <a class="logo" style="color:white; justify-content:center; margin-bottom:20px;">
+            <i class="fa-solid fa-layer-group" style="color:var(--primary);"></i>
+            Nova<span>Digital</span>Solution
+        </a>
+        <p>Building performance-driven digital experiences.</p>
+        <div class="copyright">
+            <p>&copy; 2025 Nova Digital Solution. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+        if (navLinks.style.display === 'flex') {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'flex';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '80px';
+            navLinks.style.left = '0';
+            navLinks.style.width = '100%';
+            navLinks.style.background = 'white';
+            navLinks.style.padding = '20px';
+        }
+    });
+</script>
+
+</body>
+</html>
