@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Digital International Digital Ads Executive Recruitment</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <!-- Open Graph / Facebook / Zalo -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leajacques99-rgb.github.io/Nova-digital-solutions/">
+<meta property="og:title" content="Nova Digital - Premium Digital Marketing Agency">
+<meta property="og:description" content="Leading Digital Marketing Strategic Partner. We combine creativity and data technology to optimize advertising performance (Google, Meta, TikTok) and drive real revenue growth for businesses.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://leajacques99-rgb.github.io/Nova-digital-solutions/">
+<meta property="twitter:title" content="Nova Digital - Premium Digital Marketing Agency">
+<meta property="twitter:description" content="Leading Digital Marketing Strategic Partner. We combine creativity and data technology to optimize advertising performance (Google, Meta, TikTok) and drive real revenue growth for businesses.">
+<meta property="twitter:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+<!-- Meta Tags bổ sung cho SEO -->
+<meta name="description" content="Leading Digital Marketing Strategic Partner. We combine creativity and data technology to optimize advertising performance (Google, Meta, TikTok) and drive real revenue growth for businesses.">
+<meta name="keywords" content="Digital Marketing Agency, Google Ads, Meta Ads, TikTok Ads, SEO, Web Design, Marketing Agency Vietnam">
+<meta name="author" content="Nova Digital">
+    <!-- Google Fonts: Inter & Playfair Display (for headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- 1. CORE VARIABLES & RESET --- */
+        :root {
+            --primary: #2563EB;      /* Trust Blue */
+            --primary-dark: #1E40AF;
+            --secondary: #0F172A;    /* Slate Black */
+            --accent: #F59E0B;       /* Amber/Orange */
+            --light-bg: #F8FAFC;
+            --white: #FFFFFF;
+            --text-body: #475569;
+            --border-color: #E2E8F0;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --container-width: 1200px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-body);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--secondary);
+            font-family: 'Playfair Display', serif; /* Elegant Serif for Headings */
+            line-height: 1.2;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding { padding: 80px 0; }
+        .bg-light { background-color: var(--light-bg); }
+
+        /* --- 2. HEADER & NAVIGATION --- */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-wrapper {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo span { color: var(--secondary); }
+
+        .nav-links { display: flex; gap: 32px; }
+        .nav-links a {
+            font-weight: 500;
+            color: var(--secondary);
+            font-size: 0.95rem;
+            position: relative;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        .btn-cta {
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
+        .btn-cta:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; color: var(--secondary); }
+
+        /* --- 3. HERO SECTION --- */
+        .hero {
+            padding: 100px 0 120px;
+            background: linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 24px;
+        }
+        .hero h1 span { color: var(--primary); font-style: italic; }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-body);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 40px;
+        }
+
+        .stat-box h3 { font-size: 2.5rem; color: var(--primary); margin-bottom: 5px; font-family: 'Inter', sans-serif; }
+        .stat-box p { font-size: 0.9rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* --- 4. SERVICES SECTION --- */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        .section-header h2 { font-size: 2.5rem; margin-bottom: 16px; }
+        .section-header .subtitle {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: #EFF6FF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+            transition: 0.3s;
+        }
+        .service-card:hover .icon-box { background: var(--primary); color: white; }
+
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 12px; font-family: 'Inter', sans-serif; font-weight: 700; }
+        .service-card p { font-size: 0.95rem; margin-bottom: 20px; }
+        .service-link { color: var(--primary); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+        .service-link:hover { gap: 12px; }
+
+        /* --- 5. ABOUT US SECTION --- */
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-img {
+            position: relative;
+        }
+        
+        .about-img img {
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            background: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+        .experience-badge span { display: block; font-size: 3rem; font-weight: 800; line-height: 1; color: var(--accent); }
+
+        .check-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+            color: var(--secondary);
+        }
+        .check-list i { color: var(--primary); }
+
+        /* --- 6. TEAM SECTION --- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .team-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .team-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+
+        .team-img-wrapper {
+            height: 300px;
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+        .team-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .team-card:hover img { transform: scale(1.05); }
+
+        .team-info { padding: 24px; }
+        .team-info h3 { font-size: 1.25rem; font-family: 'Inter', sans-serif; font-weight: 700; margin-bottom: 5px; }
+        .team-role { color: var(--primary); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; display: block; margin-bottom: 15px; }
+        .social-links { display: flex; justify-content: center; gap: 15px; }
+        .social-links a { width: 35px; height: 35px; background: #F1F5F9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 0.9rem; }
+        .social-links a:hover { background: var(--primary); color: white; }
+
+        /* --- 7. CTA / CONTACT --- */
+        .cta-section {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .cta-section h2 { color: white; margin-bottom: 20px; font-size: 2.5rem; }
+        .cta-section p { color: #94A3B8; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* --- 8. FOOTER --- */
+        footer {
+            background: #020617; /* Darker than secondary */
+            color: #CBD5E1;
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-about p { margin-top: 20px; font-size: 0.95rem; line-height: 1.8; }
+        .footer-col h4 { color: white; font-family: 'Inter', sans-serif; font-size: 1.1rem; margin-bottom: 24px; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a:hover { color: var(--primary); padding-left: 5px; }
+
+        .copyright {
+            border-top: 1px solid #1E293B;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 992px) {
+            .about-wrapper { grid-template-columns: 1fr; }
+            .experience-badge { right: 20px; bottom: 20px; }
+            .hero h1 { font-size: 2.8rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* Simplified for demo, ideally add JS toggle */
+            .mobile-menu-btn { display: block; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .hero-stats { flex-direction: column; gap: 30px; }
+            .btn-cta-nav { display: none; }
+        }
+    </style>
+<body>
+
+       <!-- Header (Giữ nguyên menu cũ) -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="https://leajacques99-rgb.github.io/Nova-digital-solutions/" class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                Nova<span>Digital</span>
+            </a>
+            
+            <nav>
+                <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href=""./form.html">Home</a></li>
+                                        <li><a href="./form.html">Form</a></li>
+                                        <li><a href="./upload.html">Uploads</a></li>
+                                        <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./team.html">Our Team</a></li>
+                </ul>
+            </nav>
+       
+
+            <a href="#contact" class="btn-cta btn-cta-nav">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span style="color: var(--primary); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; display: block; margin-bottom: 15px;">Welcome to Nova Digital</span>
+            <h1>We Scale Brands with <br> <span>Data-Driven</span> Marketing</h1>
+            <p>A full-service digital agency focused on ROI. We combine creativity with technical expertise to grow your business online.</p>
+            
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <a href="#services" class="btn-cta">Explore Services</a>
+                <a href="#contact" class="btn-cta" style="background: white; color: var(--secondary); border: 1px solid var(--border-color);">View Case Studies</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <h3>500+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-box">
+                    <h3>300%</h3>
+                    <p>Avg ROI Increase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Our Services</span>
+                <h2>Holistic Digital Solutions</h2>
+                <p>We provide end-to-end marketing strategies tailored to your specific industry needs.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-brands fa-google"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p>Dominate search results with our technical SEO audits, keyword strategy, and high-quality backlink building.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Paid Advertising (PPC)</h3>
+                    <p>Maximize conversions with precision-targeted Google Ads, Facebook Ads, and LinkedIn campaigns.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Content Marketing</h3>
+                    <p>Engage your audience with compelling storytelling, blog posts, whitepapers, and video scripts.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h3>Social Media Mgmt</h3>
+                    <p>Build a loyal community and increase brand awareness across Instagram, TikTok, and LinkedIn.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Web Design & Dev</h3>
+                    <p>Fast, responsive, and conversion-optimized websites built on modern frameworks (React, WordPress).</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Analytics & Data</h3>
+                    <p>Make informed decisions with our comprehensive tracking, reporting, and data visualization setups.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container about-wrapper">
+            <div class="about-img">
+                <!-- Using a professional office placeholder image -->
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nova Digital Office">
+                <div class="experience-badge">
+                    <span>10</span> Years of Excellence
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <span class="subtitle" style="color: var(--primary); font-weight: 700; letter-spacing: 2px;">About Nova Digital</span>
+                <h2 style="font-size: 2.5rem; margin: 15px 0 25px;">Your Strategic Partner for Digital Growth</h2>
+                <p style="margin-bottom: 25px; color: var(--text-body);">
+                    Founded in 2014, Nova Digital started with a simple mission: to make enterprise-level digital marketing accessible to ambitious brands. We don't just run ads; we build ecosystems that generate sustainable revenue.
+                </p>
+                <p style="margin-bottom: 30px; color: var(--text-body);">
+                    Our methodology blends creative storytelling with hard data. We believe that every click should have a purpose, and every campaign must deliver a measurable return on investment.
+                </p>
+
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Certified Google & Meta Partners</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Custom Strategies, No Templates</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 24/7 Dedicated Support Team</li>
+                </ul>
+
+                <a href="#contact" class="btn-cta" style="margin-top: 30px; display: inline-block;">More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Meet The Experts</span>
+                <h2>The Minds Behind the Magic</h2>
+                <p>A diverse team of strategists, creatives, and technologists working together.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="CEO">
+                    </div>
+                    <div class="team-info">
+                        <h3>James Anderson</h3>
+                        <span class="team-role">CEO & Founder</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="CMO">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Mitchell</h3>
+                        <span class="team-role">Head of Strategy</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Creative Director">
+                    </div>
+                    <div class="team-info">
+                        <h3>David Chen</h3>
+                        <span class="team-role">Creative Director</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tech Lead">
+                    </div>
+                    <div class="team-info">
+                        <h3>Emily Roberts</h3>
+                        <span class="team-role">Lead Developer</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Ready to Skyrocket Your Business?</h2>
+            <p>Let's discuss how we can help you achieve your digital marketing goals. Schedule a free 30-minute consultation today.</p>
+            <a href="#" class="btn-cta" style="background: white; color: var(--primary);">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo" style="color: white;">
+                        <i class="fa-solid fa-layer-group" style="color: var(--primary);"></i>
+                        Nova<span>Digital</span>
+                    </a>
+                    <p>Nova Digital is a full-service agency committed to helping businesses grow through innovative digital solutions and data-driven strategies.</p>
+                    <div class="social-links" style="justify-content: start; margin-top: 20px;">
+                        <a href="#" style="background: rgba(255,255,255,0.1); color: white;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" style="background: rgba(255,255,255,0.1); color: white;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" style="background: rgba(255,255,255,0.1); color: white;"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">PPC Advertising</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot" style="width: 20px; color: var(--primary);"></i> New York, USA</li>
+                        <li><i class="fa-solid fa-phone" style="width: 20px; color: var(--primary);"></i> +1 040-853-4470</li>
+                        <li><i class="fa-solid fa-envelope" style="width: 20px; color: var(--primary);"></i> hello@Nova.digital</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Nova Digital Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Smooth Scroll handling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile Menu Toggle (Basic logic)
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            if(navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '80px';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+
+</html>
