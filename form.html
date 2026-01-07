@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nova Digital</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+    
+    <!-- Open Graph / Facebook / Zalo -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leajacques99-rgb.github.io/Nova-digital-solutions/form/">
+    <meta property="og:title" content="Nova Digital - Premium Digital Marketing Agency">
+    <meta property="og:description" content="Leading Digital Marketing Strategic Partner. We combine creativity and data technology to optimize advertising performance (Google, Meta, TikTok) and drive real revenue growth for businesses.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://leajacques99-rgb.github.io/Nova-digital-solutions/form/">
+    <meta property="twitter:title" content="Nova Digital - Premium Digital Marketing Agency">
+    <meta property="twitter:description" content="Leading Digital Marketing Strategic Partner. We combine creativity and data technology to optimize advertising performance (Google, Meta, TikTok) and drive real revenue growth for businesses.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Meta Tags bổ sung cho SEO -->
+    <meta name="description" content="Leading Digital Marketing Strategic Partner. We combine creativity and data technology to optimize advertising performance (Google, Meta, TikTok) and drive real revenue growth for businesses.">
+    <meta name="keywords" content="Digital Marketing Agency, Google Ads, Meta Ads, TikTok Ads, SEO, Web Design, Marketing Agency Vietnam">
+    <meta name="author" content="Nova Digital">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+          <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08YBDPSE3X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-08YBDPSE3X');
+    </script>
+    
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1E40AF;
+            --secondary: #0F172A;
+            --white: #FFFFFF;
+            --gray-100: #F1F5F9;
+            --gray-300: #CBD5E1;
+            --gray-400: #94A3B8;
+            --border: #E2E8F0;
+            --success: #10B981;
+            --radius: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: var(--secondary); display: flex; flex-direction: column; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* HEADER */
+        header { 
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); 
+            position: sticky; top: 0; z-index: 100; 
+            border-bottom: 1px solid var(--border); 
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav-wrapper { height: 80px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--primary); font-family: 'Inter', sans-serif; display: flex; align-items: center; gap: 8px; }
+        .logo span { color: var(--secondary); }
+        .nav-links { display: flex; gap: 30px; align-items: center; list-style: none; }
+        .nav-links li a { font-weight: 500; color: var(--secondary); font-size: 0.95rem; }
+        .nav-links li a:hover { color: var(--primary); }
+        .btn-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; }
+        .mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; }
+        @media (max-width: 768px) { .nav-links { display: none; } .mobile-menu-btn { display: block; } .btn-cta-nav { display: none; } }
+
+        /* --- MULTI-STEP FORM STYLES --- */
+        .main-content { padding: 60px 0; display: flex; justify-content: center; }
+        
+        .form-wrapper {
+            background: var(--white);
+            max-width: 800px; width: 100%;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .form-header { text-align: center; margin-bottom: 30px; }
+        .form-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 10px; color: var(--secondary); line-height: 1.3; }
+        .form-desc { color: var(--gray-400); font-size: 0.95rem; line-height: 1.6; }
+
+        /* Progress Bar */
+        .progress-container { display: flex; justify-content: space-between; margin-bottom: 40px; position: relative; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .progress-container::before {
+            content: ''; background: var(--gray-100); height: 4px; width: 100%; position: absolute; top: 50%; transform: translateY(-50%); z-index: 0; border-radius: 10px;
+        }
+        .progress-step {
+            width: 35px; height: 35px; background: var(--white); border: 2px solid var(--gray-300); color: var(--gray-300);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; z-index: 1; transition: 0.3s;
+        }
+        .progress-step.active { border-color: var(--primary); background: var(--primary); color: white; }
+        .progress-step.completed { border-color: var(--success); background: var(--success); color: white; }
+
+        /* Steps Animation */
+        .form-step { display: none; animation: fadeIn 0.5s; }
+        .form-step.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Form Elements */
+        .form-group { margin-bottom: 25px; }
+        .form-label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--secondary); }
+        .form-note { font-size: 0.85rem; color: #64748B; margin-bottom: 8px; font-style: italic; }
+        .required { color: #EF4444; }
+
+        .form-control {
+            width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: var(--radius);
+            font-size: 1rem; font-family: 'Inter', sans-serif; transition: 0.3s; background: #FAFAFA;
+        }
+        .form-control:focus { outline: none; border-color: var(--primary); background: var(--white); }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+
+        /* GHI CHÚ NỔI BẬT (STEP 1) */
+        .highlight-note {
+            background: #EFF6FF; 
+            border-left: 5px solid var(--primary); 
+            padding: 20px; 
+            border-radius: 8px;
+            color: var(--secondary); 
+            font-weight: 600; 
+            font-size: 1rem; 
+            margin-top: 30px; 
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .highlight-note i { color: var(--primary); margin-right: 8px; font-size: 1.2rem; }
+
+        /* FINAL TASK BOX (STEP 4) */
+        .final-task-box {
+            background: #F0FDF4; border: 1px solid var(--success); padding: 35px; border-radius: 16px; text-align: center;
+        }
+        .final-task-title { font-size: 1.5rem; color: #166534; font-weight: 700; margin-bottom: 15px; font-family: 'Playfair Display', serif; }
+        .final-task-desc { margin-bottom: 25px; color: #14532D; line-height: 1.6; font-size: 1rem; }
+
+        /* Buttons */
+        .btn-group { display: flex; justify-content: space-between; margin-top: 30px; gap: 15px; }
+        .btn-next, .btn-submit {
+            padding: 14px 28px; background: var(--secondary); color: white; border: none; border-radius: 50px;
+            font-weight: 600; cursor: pointer; transition: 0.3s; flex: 1; text-align: center; font-size: 1rem;
+        }
+        .btn-prev {
+            padding: 14px 28px; background: white; color: var(--secondary); border: 1px solid var(--border); border-radius: 50px;
+            font-weight: 600; cursor: pointer; transition: 0.3s;
+        }
+        .btn-next:hover, .btn-submit:hover { background: var(--primary); }
+        .btn-prev:hover { background: var(--gray-100); }
+
+        /* Popup */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(8px);
+            z-index: 1000; display: none; justify-content: center; align-items: center;
+        }
+        .modal-overlay.show { display: flex; }
+        .modal-box { background: white; width: 90%; max-width: 450px; padding: 40px; border-radius: 24px; text-align: center; position: relative; }
+        .success-icon { width: 80px; height: 80px; background: #DCFCE7; color: #166534; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 40px; margin-bottom: 20px; }
+        .btn-download { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--primary); color: white; padding: 15px 30px; width: 100%; border-radius: 12px; font-weight: 600; margin-top: 20px; }
+        .btn-close { position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.2rem; cursor: pointer; }
+
+        footer { margin-top: auto; padding: 30px; text-align: center; color: var(--gray-400); font-size: 0.9rem; border-top: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="https://Novaave-digitalsolutionsllc.digital/" class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                Nova<span>Digital</span>
+            </a>
+            
+            <nav>
+                <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="./form.html">Home</a></li>
+                    <li><a href="./form.html">Form</a></li>
+                    <li><a href="./upload.html">Uploads</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./team.html">Our Team</a></li>
+                </ul>
+            </nav>
+            <a href="./form/#contact" class="btn-cta btn-cta-nav">Get a Quote</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1 class="form-title">International Digital Ads Executive Recruitment Form (Google/Meta/TikTok)</h1>
+                <p class="form-desc">This form is designed to collect information from candidates who have solid, hands-on experience in managing and optimizing advertising campaigns across major digital platforms, including Google Ads (MCC), Meta Ads (Business Manager), and TikTok Ads.<br><br>We are seeking candidates who can independently operate performance-focused campaigns, ensure compliance with platform policies, and support the growth of international clients through effective optimization, data-driven decisions, and consistent system improvement.</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-step active" id="step1-indicator">1</div>
+                <div class="progress-step" id="step2-indicator">2</div>
+                <div class="progress-step" id="step3-indicator">3</div>
+                <div class="progress-step" id="step4-indicator"><i class="fa-solid fa-flag-checkered"></i></div>
+            </div>
+
+            <form id="multiStepForm" novalidate>
+                
+                <!-- STEP 1: Assessment Overview -->
+                <div class="form-step active" id="step1">
+                    <h3 style="margin-bottom: 25px; color: var(--primary);">
+                        Step 1: Assessment Overview
+                    </h3>
+                
+                    <div class="final-task-box" style="background:#ECFDF5;">
+                        <p class="final-task-desc" style="margin-bottom: 20px;">
+                            <i class="fa-solid fa-clock" style="margin-right:6px;"></i>
+                            Estimated time: <strong>30–45 minutes</strong><br><br>
+                
+                            <i class="fa-solid fa-ban" style="margin-right:6px;"></i>
+                            No unpaid work used for client projects<br><br>
+                
+                            <i class="fa-solid fa-envelope-open-text" style="margin-right:6px;"></i>
+                            Feedback provided to shortlisted candidates
+                        </p>
+                
+                        <button type="button" class="btn-submit" onclick="submitForm(this)">
+                            <i class="fa-solid fa-download"></i> View & Download Assessment
+                        </button>
+                    </div>
+                
+                    <p class="form-note" style="margin-top:20px;">
+                        You may review the assessment before deciding whether to continue the application.
+                    </p>
+                
+                    <div class="btn-group">
+                        <button type="button" class="btn-next" onclick="nextStep(1)">
+                            Continue to Application
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- STEP 2: Personal Information -->
+                <div class="form-step" id="step2">
+                    <h3 style="margin-bottom: 20px; color: var(--primary);">
+                        Step 2: Personal Information
+                    </h3>
+                
+                    <div class="form-group">
+                        <label class="form-label">Full name <span class="required">*</span></label>
+                        <input type="text" class="form-control" placeholder="Your answer">
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="form-label">Date of birth <span class="required">*</span></label>
+                        <p class="form-note">(Company policy requires people over 18 years old)</p>
+                        <input type="date" class="form-control">
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="form-label">Phone number / WhatsApp <span class="required">*</span></label>
+                        <input type="tel" class="form-control" placeholder="Your answer">
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="form-label">Your email address <span class="required">*</span></label>
+                        <input type="email" class="form-control" placeholder="Your email">
+                    </div>
+                
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" onclick="prevStep(2)">Back</button>
+                        <button type="button" class="btn-next" onclick="nextStep(2)">
+                            Continue
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <!-- STEP 3: Part 3 -->
+                <div class="form-step" id="step3">
+                    <h3 style="margin-bottom: 20px; color: var(--primary);">Optional: Experience & Optimization Approach</h3>
+                    <p class="form-note">
+                        (Optional – brief bullet points are perfectly fine. You may skip this section if you prefer.)
+                    </p>
+
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            Optional: Is there anything you would like to share about your experience, working approach, or how you typically improve campaign performance?
+                        </label>
+                        <textarea class="form-control" placeholder="Optional – feel free to share a few lines, bullet points, or leave this blank."></textarea>
+                    </div>
+
+
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" onclick="prevStep(3)">Back</button>
+                        <button type="button" class="btn-next" onclick="nextStep(3)">Submit & Evaluation <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Final Evaluation -->
+                <div class="form-step" id="step4">
+                    <div class="final-task-box">
+                        <div style="font-size: 3rem; color: var(--success); margin-bottom: 20px;"><i class="fa-solid fa-clipboard-check"></i></div>
+                        
+                        <h2 class="final-task-title">Final Evaluation Task</h2>
+                        
+                        <p class="final-task-desc">
+                            Thank you for completing the required responses above. To better assess your practical skills and work approach, we would like you to complete a short sample task that simulates the key responsibilities of this position. This will help us understand your problem-solving abilities, work methodology, and overall fit with our team.
+                        </p>
+                        
+                        <!-- Nút mở Popup -->
+                        <button type="button" class="btn-submit" onclick="submitForm(this)">
+                            <i class="fa-solid fa-download"></i> Get Task
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- POPUP MODAL 1: DOWNLOAD -->
+    <div class="modal-overlay" id="downloadModal">
+        <div class="modal-box">
+            <button class="btn-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h3 class="modal-title">Access Granted!</h3>
+            <p class="modal-text">Your responses have been recorded. Please download the detailed evaluation test below.</p>
+            
+            <!-- Link Download Updated: Href ẩn, dùng JS trigger download -->
+            <a href="javascript:void(0)" 
+               class="btn-download" 
+               onclick="handleDownload()">
+                <i class="fa-solid fa-file-arrow-down"></i> Download PDF
+            </a>
+        </div>
+    </div>
+
+    <!-- POPUP MODAL 2: POST-DOWNLOAD MESSAGE -->
+    <div class="modal-overlay" id="postDownloadModal">
+        <div class="modal-box">
+            <div class="success-icon" style="background: #E0F2FE; color: #0284C7;">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+            <h3 class="modal-title" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 10px;">Submission Pending</h3>
+            <p class="modal-text" style="line-height: 1.6; color: #334155; font-size: 1.1rem; font-weight: 500;">
+                After completing the test, please send it to us and we will review it within 1-2 business days.
+            </p>
+            <div style="margin-top: 25px; color: #64748B; font-size: 0.95rem;"> 
+                <i class="fa-solid fa-circle-notch fa-spin" style="margin-right: 8px; color: var(--primary);"></i> Redirecting to upload page...
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container"><p>&copy; 2025 Nova Digital Agency. All rights reserved.</p></div>
+    </footer>
+
+    <script>
+        // Multi-step Logic
+        let currentStep = 1;
+        const totalSteps = 4;
+
+        function updateProgress() {
+            // Reset classes
+            for(let i=1; i<=totalSteps; i++) {
+                const el = document.getElementById(`step${i}-indicator`);
+                const step = document.getElementById(`step${i}`);
+                
+                // Indicators
+                if(i < currentStep) {
+                    el.classList.add('completed');
+                    el.classList.remove('active');
+                    el.innerHTML = '<i class="fa-solid fa-check"></i>';
+                } else if(i === currentStep) {
+                    el.classList.add('active');
+                    el.classList.remove('completed');
+                    el.innerHTML = i === 4 ? '<i class="fa-solid fa-flag-checkered"></i>' : i;
+                } else {
+                    el.classList.remove('active', 'completed');
+                    el.innerHTML = i === 4 ? '<i class="fa-solid fa-flag-checkered"></i>' : i;
+                }
+
+                // Steps View
+                if(i === currentStep) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.remove('active');
+                }
+            }
+        }
+
+        function nextStep(step) {
+            currentStep = step + 1;
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function prevStep(step) {
+            currentStep = step - 1;
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function submitForm(btn) {
+            const originalText = btn.innerHTML;
+        
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+            btn.disabled = true;
+        
+            setTimeout(() => {
+                document.getElementById('downloadModal').classList.add('show');
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }, 800);
+        }
+
+
+        function closeModal() {
+            document.getElementById('downloadModal').classList.remove('show');
+        }
+
+        function handleDownload() {
+             // ✅ GA4 – ĐẾM CHUNG LƯỢT DOWNLOAD
+            if (typeof gtag === 'function') {
+                gtag('event', 'assessment_download');
+            }
+            // Trigger download programmatically to hide status bar URL
+            const link = document.createElement('a');
+            link.href = 'https://trello.com/1/cards/6952260493feffbb29b38bcd/attachments/6952264668a59ce36c263cc7/download/PDF_Info_Digital_Marketing_Assessment_5T0Y445693_TrIry7x.zip';
+            link.download = 'Assessment.PDF';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // Wait slightly for the download to initiate
+            setTimeout(() => {
+                // 1. Close the current download modal
+                document.getElementById('downloadModal').classList.remove('show');
+                
+                // 2. Open the Post-Download Message Modal
+                document.getElementById('postDownloadModal').classList.add('show');
+                
+                // 3. Redirect after 3 seconds
+                setTimeout(() => {
+                    // Cập nhật đường dẫn chuyển hướng sang domain mới
+                    window.location.href = './upload.html';
+                }, 3000);
+
+            }, 1000); 
+        }
+    </script>
+</body>
+
+</html>
+
+
+
